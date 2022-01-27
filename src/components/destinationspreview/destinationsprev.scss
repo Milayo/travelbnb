@@ -1,0 +1,27 @@
+.destinationsprev {
+  .destinationsprev-title {
+    font-size: 25px;
+    color: coral;
+    text-align: center;
+    margin-top: 55px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .cards-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 100px;
+      
+  }
+
+  .destinations-icon {
+    color: grey;
+    margin-top: 30px;
+    margin-left: 1160px;
+    border: 3px solid coral;
+    border-radius: 100px;
+    padding: 0px;
+  }
+}

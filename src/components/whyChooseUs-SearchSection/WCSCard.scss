@@ -1,0 +1,52 @@
+.wcscard {
+  background-color: rgb(235, 228, 228);
+  margin: 0px 40px;
+  padding: 30px;
+  border-radius: 5px;
+
+  .wcscard-title {
+    text-align: center;
+    color: coral;
+  }
+
+  .wcscard-content {
+    text-align: center;
+  }
+
+  .wcscard-button {
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-cover {
+    border-radius: 100px;
+    padding: 5px;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    margin: 20px auto;
+    background-color: rgba(255, 127, 80, 0.5);
+    
+    ::after {
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      z-index: -10;
+      background-color: rgba(255, 127, 80, 0.4);
+    }
+  }
+
+  .wscard-icon {
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: coral;
+  }
+}

@@ -1,0 +1,18 @@
+.filterpage {
+  border: 1px solid red;
+  height: 250px;
+  width: 250px;
+  margin-top: 55px;
+  padding: 45px;
+  position: absolute;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  z-index: 50;
+  right: 35px;
+  background-color: white;
+
+  .cancel-icon  {
+      top: 10px;
+      right: 10px;
+      position: absolute;
+  }
+}

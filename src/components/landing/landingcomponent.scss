@@ -1,0 +1,56 @@
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  .landingpage-content {
+    margin: 170px;
+    text-align: center;
+    color: whitesmoke;
+    
+  
+
+    p {
+      letter-spacing: 4px;
+      font-size: 45px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      //font-family: 'Aclonica', sans-serif;
+      //font-family: 'Dancing Script', cursive;
+      //text-shadow: 2px 2px #110202;
+     
+    }
+    span {
+      letter-spacing: 2.5px;
+      font-size: 25px;
+      //font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      //font-family: 'Aclonica', sans-serif;
+      //font-family: 'Dancing Script', cursive;
+      //text-shadow: 2px 2px #110202;
+      line-height: 50px;   
+    }
+  }
+
+  .landingpage-button {
+    border-radius: 100px;
+    color: coral;
+    margin-top: 110px;
+    height: 50px;
+    width: 150px;
+  }
+}
+.landing-container::after {
+  content: "";
+  background-image: url("../../assets/LandingPageIMG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

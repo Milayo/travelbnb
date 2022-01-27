@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-image: url("../../assets/LandingPageIMG.jpg");
+  //background-size: cover;
+  //background-position: center;
+  padding: 15px 0px;
+  color: white;
+  box-shadow: 6px 10px 5px -3px rgba(0, 0, 0, 0.34);
+
+  .header-icon-name {
+    display: flex;
+    flex-direction: column;
+    .header-icon {
+      color: grey;
+      align-self: center;
+      margin-bottom: 5px;
+    }
+    span {
+      font-family: "Rock Salt", cursive;
+    }
+  }
+
+  .main-nav {
+    align-self: center;
+    font-family: 'Henny Penny', cursive;
+
+    li {
+      text-decoration: none;
+      align-content: center;
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    .header-button {
+      height: 45px;
+      width: 200px;
+      //margin-right: 75px;
+      margin-bottom: 0px;
+    }
+  }
+}

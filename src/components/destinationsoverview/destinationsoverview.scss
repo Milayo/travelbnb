@@ -1,0 +1,59 @@
+.destinations-overview {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+
+.destinations-header {
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 55px 0px 55px;
+
+  .filter-icon {
+    border: 1px solid lightgray;
+    padding: 8px;
+    background-color: lightgray;
+    position: relative;
+    display: inline-block;
+  }
+
+  .filter-icon:hover {
+    cursor: pointer;
+  }
+
+  .filter-text {
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: black;
+    width: 100px;
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 6px;
+    
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: -1px;
+  
+  }
+
+  .filter-text::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  }
+
+  .filter-icon:hover + span {
+    visibility: visible;
+  }
+}

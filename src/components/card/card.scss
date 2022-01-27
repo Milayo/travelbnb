@@ -1,0 +1,20 @@
+.card-container {
+  margin-top: 20px;
+  //width: 1000px;
+   width: 33.333333%;
+ 
+
+  .icon-cardtitle {
+    display: inline-flex;
+    color: orangered;
+
+    p {
+      font-size: 15px;
+    }
+
+    .card-icon {
+      color: orangered;
+      margin-right: 10px;
+    }
+  }
+}

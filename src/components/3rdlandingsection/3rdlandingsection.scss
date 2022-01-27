@@ -1,0 +1,32 @@
+.thirdlandingsection-main {
+  background-color: lightgrey;
+  height: 400px;
+  margin: 30px 0;
+  padding: 80px;
+
+  .thirdlandingsection {
+    margin: 0px 200px;
+    display: flex;
+    flex-direction: row;
+ 
+
+    img {
+        border: 10px solid white;
+    }
+
+    .thirdlandingsection-content {
+      margin-right: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      span {
+          font-size: 12px;
+      }
+      p {
+        font-weight: bolder;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+      }
+     
+    }
+  }
+}
