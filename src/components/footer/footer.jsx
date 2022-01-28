@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-input">
           <MDBInputGroup
             containerClassName="mb-3"
-            append="Send"
+            append="Subscribe"
             hint="Your Email Address"
           />
         </div>

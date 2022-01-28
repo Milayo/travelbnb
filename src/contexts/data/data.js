@@ -11,7 +11,7 @@ const TRAVEL_DATA = {
       id: 2,
       name: "Bora Bora, France",
       imageUrl: "https://picsum.photos/id/1033/500/500",
-      routeName: "france",
+      routeName: "france1",
       price: 500,
     },
     {
@@ -39,14 +39,14 @@ const TRAVEL_DATA = {
       id: 6,
       name: "The Heritage, France",
       imageUrl: "https://picsum.photos/id/1040/500/500",
-      routeName: "france",
+      routeName: "france2",
       price: 135,
     },
     {
       id: 7,
       name: "Effiel Tower, France",
       imageUrl: "https://picsum.photos/id/1044/500/500",
-      routeName: "france2",
+      routeName: "france3",
       price: 200,
     },
     {
@@ -81,7 +81,7 @@ const TRAVEL_DATA = {
       id: 12,
       name: "The Ho, France",
       imageUrl: "https://picsum.photos/id/1075/500/500",
-      routeName: "france3",
+      routeName: "france4",
       price: 80,
     },
     {
@@ -109,7 +109,7 @@ const TRAVEL_DATA = {
       id: 6,
       name: "The Heritage, France",
       imageUrl: "https://picsum.photos/id/1040/500/500",
-      routeName: "france4",
+      routeName: "france5",
       price: 135,
     },
   ],

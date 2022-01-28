@@ -1,9 +1,8 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { MDBIcon } from "mdb-react-ui-kit";
 import { useHistory } from "react-router-dom";
 import { toggleFilterButton } from "../../redux/filter/filter.actions.js";
-import DataContext from "../../contexts/data/data.context";
 import "./destinationsoverview.scss";
 import DestinationItem from "../destinationsoverviewItem/destinationOverviewItem";
 import FilterPage from "../../pages/filterpage/filterpage";
@@ -13,6 +12,7 @@ const OverviewComponent = ({ toggleFilterButton, hidden, locations }) => {
   //const [isOpen, setIsOpen] = useState(false);
   // const TRAVEL_DATA = useContext(DataContext);
   // const [data, setData] = useState(TRAVEL_DATA.Locations);
+  console.log(locations)
 
   const history = useHistory();
   // const toggleButton = () => {

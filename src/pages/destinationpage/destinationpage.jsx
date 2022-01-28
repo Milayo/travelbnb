@@ -1,21 +1,22 @@
-import React from 'react';
+import React from "react";
 import { connect } from "react-redux";
+import DestinationComponent from "../../components/destination/destinationComponent";
 
-import DestinationComponent from '../../components/destination/destinationComponent';
 
+const DestinationPage = ({ match, locations }) => {
+  const path = match.params.id;
 
-const DestinationPage = (e, { locations }) => {
-    const path = e.match.params.id;
-    const { routeName } = locations;
-    console.log(routeName)
-    console.log(path)
-    console.log(e)
-    return (
-        <div>
-            <DestinationComponent/>
-        </div>
-    )
-}
+  console.log(path);
+  return (
+    <div>
+      {locations
+        .filter((locationItem) => locationItem.routeName === path)
+        .map((locationItem) => (
+          <DestinationComponent locationItem={locationItem} />
+        ))}
+    </div>
+  );
+};
 
 const mapStateToProps = ({ filter }) => ({
   locations: filter.Locations,

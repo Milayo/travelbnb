@@ -1,7 +1,6 @@
 import React from 'react';
 import HeaderComponent from '../header/header';
 import "./landingcomponent.scss";
-import DataContext from '../../contexts/data/data.context';
 import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const LandingComponent = () => {
