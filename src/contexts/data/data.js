@@ -106,7 +106,7 @@ const TRAVEL_DATA = {
       price: 230,
     },
     {
-      id: 6,
+      id: 16,
       name: "The Heritage, France",
       imageUrl: "https://picsum.photos/id/1040/500/500",
       routeName: "france5",

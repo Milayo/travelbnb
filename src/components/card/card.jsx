@@ -32,7 +32,7 @@ const CardComponent = ({ location}) => {
                 <p> {name}</p>
               </div>
               <MDBCardText>
-                This is a wider card with supporting text below as a natural
+                Lorem ipsum dolor sit amet velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus iure corrupti totam.
               </MDBCardText>
               <MDBBtn
                 color="deep-orange"

@@ -15,8 +15,8 @@ const HeaderComponent = () => {
 
           <ul className="main-nav">
             <li>
-              <Link to="Home" spy={true} smooth={true} duration={500}>
-                Home
+              <Link to="search" spy={true} smooth={true} duration={500}>
+                Search
               </Link>
             </li>
             <li>
@@ -34,7 +34,7 @@ const HeaderComponent = () => {
                 Contact
               </Link>
             </li>
-            <MDBBtn outline className="header-button" href="#">
+            <MDBBtn outline className="header-button" href="/register">
               REGISTER/LOGIN
             </MDBBtn>
           </ul>

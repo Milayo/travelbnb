@@ -1,9 +1,14 @@
 import React from "react";
-import { MDBIcon } from "mdb-react-ui-kit";
-import { MDBInputGroup, MDBContainer } from "mdbreact";
+import { MDBIcon, MDBBtn} from "mdb-react-ui-kit";
+import { Link } from "react-scroll";
+import { MDBInputGroup, MDBContainer} from "mdbreact";
 import "./footer.scss";
 
-const Footer = () => {
+const Footer = (e) => {
+  console.log(e.target)
+  const SubscribeFunc = () => {
+    alert("Thanks for subscribing!");
+  }
   return (
     <div id="contact">
       <div className="call-section">
@@ -17,8 +22,19 @@ const Footer = () => {
         <div className="footer-input">
           <MDBInputGroup
             containerClassName="mb-3"
-            append="Subscribe"
             hint="Your Email Address"
+            type="email"
+            value={e.target}
+            name='email'
+            append={
+              <MDBBtn
+                color="deep-orange"
+                className="m-0 px-3 py-2 z-depth-0 footer-btn"
+                onClick={SubscribeFunc}
+              >
+                Subscribe
+              </MDBBtn>
+            }
           />
         </div>
         <MDBContainer className="footer-content">
@@ -45,7 +61,6 @@ const Footer = () => {
               className="follow-icon"
               style={{ backgroundColor: "lightBlue" }}
             />
-
             <MDBIcon
               fab
               icon="youtube"
@@ -70,9 +85,39 @@ const Footer = () => {
           </ul>
           <ul>
             <li>Quick Links</li>
-            <li>Home</li>
-            <li>Place</li>
-            <li>About</li>
+            <li>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="link"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="places"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="link"
+              >
+                Places
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="link"
+              >
+                About
+              </Link>
+            </li>
           </ul>
         </MDBContainer>
       </div>

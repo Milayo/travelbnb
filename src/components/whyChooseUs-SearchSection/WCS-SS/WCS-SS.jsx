@@ -1,7 +1,7 @@
 import React from "react";
 import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import "./WCS-SS.scss";
-import WCSCard from "./WCSCard";
+import WCSCard from "../WCSCard/WCSCard.jsx";
 
 const WCSSSComponent = () => {
   return (
@@ -14,7 +14,7 @@ const WCSSSComponent = () => {
           <WCSCard cardIcon="hands-helping" title="Best Price Guaranteed" />
         </div>
       </div>
-      <div className="wcssinput-section">
+      <div className="wcssinput-section" id="search">
         <div className="wcssinput-container">
           <MDBIcon icon="map-marker-alt" className="wcssinput-icon" />
           <input

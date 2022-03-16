@@ -42,7 +42,7 @@ const OverviewComponent = ({ toggleFilterButton, hidden, locations }) => {
       </div>
       <div className="destinations-overview">
         {locations.map((locationItem) => (
-          <DestinationItem id={locationItem.id} locationItem={locationItem} />
+          <DestinationItem key={locationItem.id} locationItem={locationItem} />
         ))}
       </div>
     </div>

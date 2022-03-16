@@ -15,9 +15,6 @@ const WCSCard = ({ cardIcon, title }) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
         iure.
       </p>
-      <MDBBtn href="#" color="deep-orange" className="wcscard-button">
-        See More
-      </MDBBtn>
     </div>
   );
 };
