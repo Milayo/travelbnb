@@ -34,7 +34,7 @@ const HeaderComponent = () => {
                 Contact
               </Link>
             </li>
-            <MDBBtn outline className="header-button" href="/register">
+            <MDBBtn outline className="header-button" href="/signin">
               REGISTER/LOGIN
             </MDBBtn>
           </ul>

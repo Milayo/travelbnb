@@ -1,6 +1,6 @@
 import React from "react";
 import "./WCSCard.scss";
-import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
+import { MDBIcon } from "mdb-react-ui-kit";
 
 const WCSCard = ({ cardIcon, title }) => {
   return (

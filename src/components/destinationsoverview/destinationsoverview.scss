@@ -17,6 +17,7 @@
     background-color: lightgray;
     position: relative;
     display: inline-block;
+    margin-left: 990px;
   }
 
   .filter-icon:hover {
@@ -37,7 +38,7 @@
     
     position: absolute;
     z-index: 1;
-    right: 30px;
+    right: 120px;
     top: -1px;
   
   }
@@ -55,5 +56,18 @@
 
   .filter-icon:hover + span {
     visibility: visible;
+  }
+
+  .logout-icon {
+     border: 1px solid lightgray;
+    padding: 8px;
+    background-color: lightgray;
+    position: relative;
+    display: inline-block;
+  }
+
+  
+  .logout-icon:hover {
+    cursor: pointer;
   }
 }

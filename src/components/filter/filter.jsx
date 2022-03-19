@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import { useDispatch, connect } from "react-redux";
 import "./filter.scss";
 import { MDBBtn } from "mdb-react-ui-kit";
@@ -13,7 +12,6 @@ const FilterComponent = ({ filterUnderHundred }) => {
   const [checked, setChecked] = useState(false);
   const [title, setTitle] = useState("");
   const dispatch = useDispatch();
-  const history = useHistory();
   const handleChange = (e) => {
     setTitle(e.target.id);
     setChecked(e.target.checked)

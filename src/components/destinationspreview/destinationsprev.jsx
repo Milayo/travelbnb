@@ -15,7 +15,7 @@ const DestinationsPreview = () => {
       <div className="cards-section">
         {TRAVEL_DATA.Locations.filter((location, id) => id < 6).map(
           (location) => (
-            <CardComponent id={location.id} location={location} />
+            <CardComponent key={location.id} location={location} />
           )
         )}
       </div>

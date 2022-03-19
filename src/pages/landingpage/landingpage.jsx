@@ -8,7 +8,8 @@ import Footer from "../../components/footer/footer";
 import DataContext from "../../contexts/data/data.context";
 import TRAVEL_DATA from "../../contexts/data/data";
 
-const LandingPage = () => {
+const LandingPage = ({ currentUser }) => {
+  console.log(currentUser)
   return (
     <div>
       <LandingComponent />

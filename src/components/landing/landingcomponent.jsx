@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderComponent from '../header/header';
 import { Link } from "react-scroll";
 import "./landingcomponent.scss";
-import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
+import { MDBBtn} from 'mdb-react-ui-kit';
 
 const LandingComponent = () => {
     return (

@@ -1,9 +1,12 @@
 import React from "react";
+import "./destinationsoverview.scss";
+
 import { connect } from "react-redux";
 import { MDBIcon } from "mdb-react-ui-kit";
 import { useHistory } from "react-router-dom";
+import { auth } from "../firebase/firebase.utils.js";
 import { toggleFilterButton } from "../../redux/filter/filter.actions.js";
-import "./destinationsoverview.scss";
+
 import DestinationItem from "../destinationsoverviewItem/destinationOverviewItem";
 import FilterPage from "../../pages/filterpage/filterpage";
 
@@ -31,6 +34,7 @@ const OverviewComponent = ({ toggleFilterButton, hidden, locations }) => {
             history.push("/");
           }}
         />
+
         <MDBIcon
           icon="exchange-alt"
           size="2x"
@@ -39,6 +43,15 @@ const OverviewComponent = ({ toggleFilterButton, hidden, locations }) => {
         />
         {hidden && <FilterPage />}
         <span className="filter-text">Filter</span>
+        <MDBIcon
+          fas
+          icon="sign-out-alt"
+          size="2x"
+          className="logout-icon"
+          onClick={() => {
+            auth.signOut()
+          history.push("/");}}
+        />
       </div>
       <div className="destinations-overview">
         {locations.map((locationItem) => (

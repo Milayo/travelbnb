@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import DestinationComponent from "../../components/destination/destinationComponent";
 
 
-const DestinationPage = ({ match, locations }) => {
+const DestinationPage = ({ match, locations, currentUser }) => {
   const path = match.params.id;
 
   console.log(path);
@@ -12,7 +12,7 @@ const DestinationPage = ({ match, locations }) => {
       {locations
         .filter((locationItem) => locationItem.routeName === path)
         .map((locationItem) => (
-          <DestinationComponent locationItem={locationItem} />
+          <DestinationComponent currentUser={currentUser} locationItem={locationItem} key={locationItem.id}/>
         ))}
     </div>
   );
